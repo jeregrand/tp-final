@@ -1,0 +1,479 @@
+:root{
+    --titulos: #2980B9;
+    --textos: black;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo {
+    color:var(--titulos);
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+
+
+header {
+    font-family: 'open sans';
+    width: 100%;
+    height: 1000px;
+    background: #38b4da;
+    background: #2980B9;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, hsla(0, 0%, 100%, 0.521), hsla(196, 93%, 70%, 0.521), hsla(204, 64%, 44%, 0.521)), url(../img/img/7\ balones\ portada.jpg);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, hsla(0, 0%, 100%, 0.521), hsla(196, 93%, 70%, 0.521), hsla(204, 64%, 44%, 0.521)), url(../img/img/7\ balones\ portada.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav > a{
+    color:var(--textos);
+    font-weight: 500;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 50px;
+    color:var(--textos);
+}
+
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color:var(--textos);
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+main .contenedor-comienzos{
+    background: #abd3f3;
+    font-family: 'open sans';
+    padding: 30px 0 30px 0;
+}
+
+
+.contenedor-comienzos-carrera{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-sus-comienzos{
+    width: 45%;
+}
+
+.contenedor-comienzos .contenido-textos{
+    font-family: 'Josefin Sans', sans-serif;
+    width: 45%;
+}
+
+.contenido-textos h3{
+    padding: 30px 30px 0px 30px;
+    margin-bottom: 20px;
+}
+
+.contenido-textos p{
+    padding: 30px 30px 30px 30px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+
+
+
+.mejores-momentos{
+    background: #abd3f3;
+}
+
+.mejores-momentos .titulo{
+    font-family: 'open sans';
+}
+
+.imagenes-mejores-momentos{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-mejores-momentos{
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-mejores-momentos > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(204, 64%, 44%, 0.521);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img{
+    width: 50px;
+}
+
+.imagen-mejores-momentos:hover .hover-galeria{
+    transform: scale(1);
+}
+
+
+
+
+.records-contenedor{
+    background: #abd3f3;
+}
+
+.records-contenedor .titulo{
+    font-family: 'open sans';
+}
+
+
+.cards{
+    background: #abd3f3;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards .card{
+    background: #2980B9;
+    display: flex;
+    width: 46%;
+    height: 300px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+.cards .card img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid var(--textos);
+    border-radius: 50%;
+    display: block;
+}
+
+.cards .card > .contenido-texto-card{
+    font-family: 'Josefin Sans', sans-serif;
+    width: 70%;
+    height: 50%;
+    color:var(--textos);
+}
+
+.cards .card > .contenido-texto-card p{
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+
+
+
+.mas-sobre-el{
+    background: #abd3f3;
+    padding-bottom: 30px;
+}
+
+.mas-sobre-el .titulo{
+        font-family: 'open sans';
+        padding: 50px 0 0 0;
+}
+
+.mas-contenedor{
+    font-family: 'Josefin Sans', sans-serif;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mas-ind{
+    width: 28%;
+    text-align: center;
+}
+
+
+.mas-ind h3{
+margin: 10px 0;
+}
+
+.mas-ind p{
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+
+
+
+
+/* Formulario de contacto sacado de un tutorial
+form{
+    width: 450px;
+    margin: auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+
+h2{
+    color: var(--textos);
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+textarea{
+    min-height: 50px;
+    max-height: 100px;
+    max-width: 100%;
+}
+
+#boton{
+    background: #abd3f3;
+}
+
+#boton:hover{
+    cursor: pointer;
+} */ 
+footer{
+    background: #2980B9;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #000;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--textos);
+    border-bottom: 3px solid #000;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--textos);
+}
+
+.titulo-final{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: var(--textos);
+} 
+
+@media screen and (max-width:900px){
+    header{
+        background-position: center;
+    }
+
+    .contenedor-comienzos-carrera{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenedor-comienzos .contenido-textos{
+        width: 90%;
+    }
+
+    .imagen-sus-comienzos{
+        width: 90%;
+    }
+
+
+
+    .imagen-mejores-momentos{
+        width: 44%;
+    }
+
+
+
+    .cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards .card{
+        width: 90%;
+    }
+
+    .cards .card:first-child{
+        margin-bottom: 30px;
+    }
+
+
+
+    .mas-contenedor{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .mas-ind{
+        width: 100%;
+        text-align: center;
+    }
+
+    .mas-ind:nth-child(1), .mas-ind:nth-child(2){
+        margin-bottom: 60px;
+    }
+
+}
+
+@media screen and (max-width:500px){
+    nav{
+        text-align: center;
+        padding: 30px 0 0 0;
+    }
+
+    nav > a{
+        margin-right: 5px;
+    }
+
+    .textos-header h1{
+        font-size: 35px;
+    }
+
+    .textos-header h2{
+        font-size: 20px;
+    }
+
+
+
+    .imagen-sus-comienzos{
+        margin-bottom: 60px;
+        width: 99%;
+    }
+
+    .contenedor-comienzos .contenido-textos{
+        width: 95%;
+    }
+
+
+
+    .imagen-mejores-momentos{
+        width: 95%;
+    }
+
+
+
+    .cards .card{
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards .card img{
+        width: 90px;
+        height: 90px;
+    }
+
+
+        /* Formulario de contacto sacado de un tutorial 
+        form{
+        width: 100%;
+    } */
+    .contenedor-footer{
+        flex-direction: column;
+        border: none;
+    }
+
+    .content-foo{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .content-foo h4{
+        border: none;
+    }
+
+    .content-foo p{
+        color: var(--textos);
+        border-bottom: 1px solid #000;
+        padding-bottom: 20px;
+    }
+
+    .titulo-final{
+        font-size: 20px;
+    }
+}
